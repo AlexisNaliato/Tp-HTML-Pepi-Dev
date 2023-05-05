@@ -1,0 +1,163 @@
+@font-face {
+    font-family: NetflixFont;
+    src: url(netflix.otf);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    color: white;
+    background: black;
+}
+
+.container::before{
+    content: "";
+    background-image: url(images/netflix.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0.3;
+    z-index: -1;
+   
+}
+
+.top_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.top_nav img {
+    width: 9%;
+    height: 9%;
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.language {
+    display: inline-flex;
+    margin-top: 30px;
+    margin-right: 50px;
+    gap: 10px;
+    align-items: center;
+    
+}
+
+.language_choice {
+    padding-left: 2.5rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-right: 2.5rem;
+    color: white;
+    background: transparent;
+    appearance: none;
+}
+
+.lien {
+    display: flex;
+    
+}
+
+a {
+    background-color: red;
+    text-align:center;
+    padding-left: 2.5rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-right: 2.5rem;
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    border-radius: 8px;
+    
+}
+
+select {
+    font-size:bold;
+    font-size: 1rem;
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.language img {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    right: 240px;
+    top: 19px;
+}
+
+.web_icon img {
+   position: absolute;
+   width: 16px;
+   height: 16px;
+   right: 340px;
+   top: 16px;
+}
+
+.container_main {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    padding-top: 150px;
+}
+
+.main_titre {
+    padding: 75px;
+    width: 850px;
+}
+
+.main_titre h1 {
+    font-size: 3.5rem;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.main_titre h2 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.main_titre h3 {
+    font-size: 1rem;
+    font-weight: 200;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.mail {
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+    
+}
+
+.mail input {
+    padding: 5px;
+    padding-right: 350px;
+    border: none;
+    text-align: left;
+    color: grey;
+}
+
+.mail button {
+    padding: 20px 30px;
+    background-color: red;
+    border: none;
+    color: white;
+    font-size: 1.3rem;
+}
