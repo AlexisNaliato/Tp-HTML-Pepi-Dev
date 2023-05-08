@@ -14,7 +14,7 @@ body {
     width: 100%;
     color: white;
     background: black;
-    font-family: Arial, Helvetica, sans-serif; ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     overflow: hidden;
 }
 
@@ -27,25 +27,23 @@ body {
     height: 100%;
     width: 100%;
     position: absolute;
-    opacity: 0.3;
-    z-index: -2;
+    opacity: 0.5;
+    z-index: -1;
 }
 
 .logo_netflix img {
     width: 9%;
     height: 9%;
     margin-left: 50px;
-    margin-top: 30px;  
+    margin-top: 20px;  
 }
 
 .container_form{
-    background-color: rgb(0, 0, 0, 0.6);
+    background-color: rgb(0, 0, 0, 0.8);
     padding: 60px;
-    height: 550px;
+    height: 540px;
     width: 400px;
     margin: auto;
-    margin-top: 20px;
-    
 }
 
 
@@ -95,12 +93,18 @@ h1 {
     font-size: 30px;
 }
 
+input[type="checkbox"] {
+    filter: brightness(70%);
+}
+
+
+
 input[type="text"], input[type="password"] {
     width: 290px;
     color: white;
     background-color: rgb(73, 73, 73);
     border: none;
-    border-radius: 5px;
+    border-radius: 3px;
     padding: 12px;
     font-size: 15px;
 }
@@ -135,4 +139,92 @@ label {
 .text h3 {
     font-size: 12px;
     font-weight: 100;
+}
+
+footer {
+    color: rgb(199, 193, 193);
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100vh;
+    margin-top: 130px;
+}
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer ul li {
+    width: 25%;
+    font-size: 12px;
+    padding: 10px 50px;
+    list-style-type: none;
+}
+
+footer p {
+    margin-left: 50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+.contenu {
+    background-color: rgb(0, 0, 0, 0.8);
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.down_logo img {
+    position: relative;
+    height: 10px;
+    width: 10px;
+    right: 40px;
+    
+}
+
+.web_icon img {
+   position: relative;
+   width: 16px;
+   height: 16px;
+   left: 40px;
+}
+
+select {
+    font-size:bold;
+    font-size: 1rem;
+    border-radius: 2px;
+    border: 1px rgb(199, 193, 193) solid;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.language {
+    display: inline-flex;
+    margin-top: 12px;
+    margin-left: 15px;
+    margin-right: 50px;
+    gap: 10px;
+    align-items: center;
+    
+}
+
+
+.language_choice {
+    padding-left: 2.5rem;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+    padding-right: 2.5rem;
+    color: rgb(255, 255, 255);
+    background: transparent;
+    appearance: none;
+}
+.language_choice option {
+    color: black;
+}
+
+li {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.text span {
+    color: blue;
 }
